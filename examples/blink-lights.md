@@ -26,7 +26,7 @@ and click the button to activate it.
 Once you hit “done” and go back, every text, voicemail, or picture you get will tell Burner to go hit this
 webhook URL on IFTTT.
 
-![IFTTT](https://github.com/adhoclabs/developer/new/master/examples/assets/blink-lights-2.png?raw=true)
+![IFTTT](https://github.com/adhoclabs/developer/blob/master/examples/assets/blink-lights-2.png?raw=true)
 
 8) You’re not actually done yet - that will send the “lights” command to IFTTT, but we haven’t told them 
 what to do with it.  The last step is to make a new recipe that does exactly this.  Go to Create a Recipe, 
@@ -39,13 +39,13 @@ and click “this”.
 11) In the Event Name field, put your event name (e.g. “lights”) and hit “create trigger”. You’ve now created 
 the “if this” part of the IFTTT recipe.
 
-![IFTTT](https://github.com/adhoclabs/developer/new/master/examples/assets/blink-lights-3.png?raw=true)
+![IFTTT](https://github.com/adhoclabs/developer/blob/master/examples/assets/blink-lights-3.png?raw=true)
 
 12) Now click “that” and search for and select Hue.  As you can see there are lots of options for the action
 you want to create.  Choose any one you like.  (We’re using “blink lights”.)  You’ll also get to pick
 which lights you want to blink (e.g. “all lights”).
 
-![IFTTT](https://github.com/adhoclabs/developer/new/master/examples/assets/blink-lights-4.png?raw=true)
+![IFTTT](https://github.com/adhoclabs/developer/blob/master/examples/assets/blink-lights-4.png?raw=true)
 
 13) That’s it!  Your summary recipe page should look something like this.  You can edit it at any time to 
 change things (e.g. which lights flash).
