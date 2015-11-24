@@ -8,7 +8,7 @@ for your burners.
 If you have something you want to contribute, simply:
 
 * clone this repository
-* add a markdown file to this directory 
+* add a markdown file to this directory with a description, steps, links or images of your project
 * submit a pull request
 
 We'll then quickly review it and publish it so the rest of the community can see what you've built.
