@@ -51,34 +51,46 @@ __IFTTT__
 
 11) Once the action has been created, paste the URL from step 2 into your Burner's Developer Connection, in the Outgoing webhook field.
 
+__NOTE__: IFTTT will give you a URL that starts with __https__. Change it to __http__ before triggering the event.
+
 12) Send the burner a text, and watch whatever action you created get triggered.
 
 __Zapier__
 
 1) Sign up or Log in to [Zapier](http://zapier.com).
 
-2) Start [creating a new "zap"](https://zapier.com/app/editor).
+2) Start creating a new Zap by clicking the "Make a Zap" button at the top of your Dashboard.
 
-3) Tap the "choose a trigger" button and find/select `Webhooks by Zapier` as your Trigger, then choose the "Catch hook" trigger.
+3) In the box under "Choose a Trigger App", type "webhook" and select "Webhooks by Zapier" as your Trigger.
 
-4) Find an action. We tried Gmail.
+4) You should see and input box and then two options under "Select Webhooks by Zapier Trigger" - "Retrieve Poll" and "Catch Hook". Select "Catch Hook" and then click the "Save + Continue" button.
 
-5) Choose an action. We chose the "Send email" action for Gmail.
+5) The next screen you should see is "Set up Webhooks by Zapier Hook." This is optional, and allows you to only look at specific information sent in by Burner. For example, if you only cared about the incoming phone numbers, you'd input "fromNumber". When you're finished, press the "Continue" button. 
 
-6) Once you have setup your Trigger and Action, tap Continue.
+6) You should now see "Test Webhooks by Zapier" at the top of this screen and a URL at the bottom (The URL will look like this: https://zapier.com/hooks/catch/1173170/2pm6it/). Input that URL into the "Outgoing Webhook URL" field in the Burner Developer Connection section.
 
-7) Copy and make note of the URL. This will be what you copy into Burner.
+7) Click "Send test request".
 
-8) If you picked an Action that needs authenticate (like Gmail) enter your credentials.
+8) In Zapier, click "Ok, I did this".
 
-9) Optionally choose a filter. For example, if you only wanted to trigger your action when a certain phone number texts you, you could enter `fromNumber.+12223334444`.
+__Note:__ Zapier will say "Looking for the hook, this might take a sec...", and it may take several minutes to recognize the test request.
 
-10) Enter any required information in the Match up section and tap continue.
+9) Click the "Continue" button.
 
-11) Test your webhook by tapping the "test webhooks" button. This will show you a link, which you can use to paste into the Burner Developer Connection section. Send yourself a text message to test out that it's working.
+10) Under "Choose an Action App", start typing in the name of the app you'd like to connect (for this example, we'll choose Gmail).
 
-12) Now that we sent a test to zapier, it knows what kind of data you can use to customize your action. Tap on any of the "Insert Fields" buttons to find data from Burner like `fromNumber`. In our example we use `fromNumber` as the subject of our email. This way, whenever the action runs, it will use whatever phone number is texting or calling us as the subject of the new email.
+11) Under "Select Gmail Action", select "Send Email" (or whatever app and action you are using) and click the "Save + Continue" button.
 
-13) Finish up by saving. You can turn your Zap on or off from your [dashboard](https://zapier.com/app/dashboard).
+12) Click the "Connect a New Account" button if your app requires authentication, go through the authentication process, and then click the "Save + Continue" button.
+
+13) In our Gmail example, I will choose an Address to send email to, a Subject line, and enter something in the Body.
+
+14) In all the fields, you should see an icon with a plus sign. If you click this, it will show you options to insert data sent over from Burner. I will choose the Type, From Number, and Payload options to show if it's a text or phone call, who it came from, and what it contains.
+
+15) Click the "Continue" button.
+
+16) Click the "Create + Continue" button to test it, or click the "Skip Test & Continue" button.
+
+17) Under "Ready to turn on your Zap?" click the toggle button to turn on your Zap.
 
 These are just a few tools we use to quickly enable cool functionality on Burner with very little work, and zero code.
