@@ -1,6 +1,6 @@
-### Outbound webhooks in the Burner Developer Connection
+### Outgoing webhooks in the Burner Developer Connection
 
-The purpose of outbound webhooks for the Burner Developer Connection is to allow more tech-savvy burner users build automation based on content they receive on their burner phone number. The outbound webhook allows forwarding text messages and pictures the Burner number receives - even voicemails left on the phone number to the web url user configures in Developer connection.
+The purpose of outgoing webhooks for the Burner Developer Connection is to allow more tech-savvy burner users build automation based on content they receive on their burner phone number. The outgoing webhook allows forwarding text messages and pictures the Burner number receives - even voicemails left on the phone number to the web url user configures in Developer connection.
 
 For some additional context check out our writeup of the feature [here](http://www.burnerapp.com/blog/2015/11/23/introducing-the-burner-developer-connection).
 
