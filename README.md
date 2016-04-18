@@ -55,6 +55,13 @@ __NOTE__: IFTTT will give you a URL that starts with __https__. Change it to __h
 
 12) Send the burner a text, and watch whatever action you created get triggered.
 
+__Data Sent to IFTTT__
+
+Burner sends data with each webhook call to IFTTT. You can use this data to make more advanced Recipes.  [IFTTT has a specific format for the data](https://ifttt.com/channels/maker/triggers/1636368624-receive-a-web-request), so we mapped the values like this: 
+>"value1" :  type - (inboundText, inboundMedia, voiceMail)
+>"value2" : payload (the text content of an SMS, or a URL to an MMS image or voicemail)
+>"value3" : fromNumber (the number who texted or called)
+
 __Zapier__
 
 1) Sign up or Log in to [Zapier](http://zapier.com).
@@ -65,7 +72,7 @@ __Zapier__
 
 4) You should see and input box and then two options under "Select Webhooks by Zapier Trigger" - "Retrieve Poll" and "Catch Hook". Select "Catch Hook" and then click the "Save + Continue" button.
 
-5) The next screen you should see is "Set up Webhooks by Zapier Hook." This is optional, and allows you to only look at specific information sent in by Burner. For example, if you only cared about the incoming phone numbers, you'd input "fromNumber". When you're finished, press the "Continue" button. 
+5) The next screen you should see is "Set up Webhooks by Zapier Hook." This is optional, and allows you to only look at specific information sent in by Burner. For example, if you only cared about the incoming phone numbers, you'd input "fromNumber". When you're finished, press the "Continue" button. 
 
 6) You should now see "Test Webhooks by Zapier" at the top of this screen and a URL at the bottom (The URL will look like this: https://zapier.com/hooks/catch/1173170/2pm6it/). Input that URL into the "Outgoing Webhook URL" field in the Burner Developer Connection section.
 
